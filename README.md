@@ -1,2 +1,1 @@
 # ProgrammeerimiseProjekt
-# tere olen peeter 
