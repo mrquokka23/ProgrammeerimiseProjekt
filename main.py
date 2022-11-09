@@ -33,10 +33,10 @@ class Player(pygame.sprite.Sprite):
             self.rect.move_ip(5, 0)
 
         # keep player on the screen
-        if self.rect.left < 0:
-            self.rect.left = 0
-        elif self.rect.right > 640:
-            self.rect.right = 640
+        if self.rect.left < 10:
+            self.rect.left = 10
+        elif self.rect.right > screen_width -10:
+            self.rect.right = screen_width -10
     
     def draw(self, surface):
         # blit yourself at your current position
