@@ -17,7 +17,7 @@ pygame.display.set_caption("Racer Game") #sets the name of the opened window
 class Player(pygame.sprite.Sprite):
     def __init__(self):
         pygame.sprite.Sprite.__init__(self)
-        self.image = pygame.image.load("ProgrammeerimiseProjekt/assets/playercar.png").convert_alpha()
+        self.image = pygame.image.load("ProgrammeerimiseProjekt/assets/Ferrari_F2004.png").convert_alpha() #ferrari on liiga paks, ford on isegi ok välimusega
         self.image = pygame.transform.rotate(self.image, -90)
         self.image = pygame.transform.scale(self.image, (50, 100))
         self.rect = self.image.get_rect()
@@ -45,7 +45,7 @@ class Player(pygame.sprite.Sprite):
 class Enemy(pygame.sprite.Sprite):
     def __init__(self):
         pygame.sprite.Sprite.__init__(self)
-        self.image = pygame.image.load("ProgrammeerimiseProjekt/assets/playercar.png").convert_alpha()
+        self.image = pygame.image.load("ProgrammeerimiseProjekt/assets/Ford_GTLM.png").convert_alpha()
         self.image = pygame.transform.rotate(self.image, 90)
         self.image = pygame.transform.scale(self.image, (50, 100))
         self.rect = self.image.get_rect()
