@@ -8,6 +8,8 @@ config_path = os.path.join(local_dir, "config-feedforward.txt")
 if __name__ == "__main__":
     while True:
         ret = mainmenu()
+        if ret == None:
+            quit()
         if ret == "Play":
             playergame()
         if ret[0] == "Train ai":
